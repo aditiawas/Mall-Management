@@ -1,0 +1,354 @@
+
+SQL*Plus: Release 11.2.0.1.0 Production on Mon Apr 16 17:28:22 2018
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+Enter user-name: system
+Enter password:
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> create table parking(spotid varchar(5), vehicle varchar(10),tentry timestamp, texit timestamp, primary key(spotid));
+
+Table created.
+
+SQL> desc parking;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SPOTID                                    NOT NULL VARCHAR2(5)
+ VEHICLE                                            VARCHAR2(10)
+ TENTRY                                             TIMESTAMP(6)
+ TEXIT                                              TIMESTAMP(6)
+
+SQL> alter table add vehno varchar(10);
+alter table add vehno varchar(10)
+            *
+ERROR at line 1:
+ORA-00903: invalid table name
+
+
+SQL> alter table parking add vehno varchar(10);
+
+Table altered.
+
+SQL> desc parking;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SPOTID                                    NOT NULL VARCHAR2(5)
+ VEHICLE                                            VARCHAR2(10)
+ TENTRY                                             TIMESTAMP(6)
+ TEXIT                                              TIMESTAMP(6)
+ VEHNO                                              VARCHAR2(10)
+
+SQL> create table emp(empid varchar(10), name varchar(20), dept varchar(10), salary real, park varchar(5), primary key(empid), foreign key(park) references parking(spotid));
+
+Table created.
+
+SQL> desc emp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPID                                     NOT NULL VARCHAR2(10)
+ NAME                                               VARCHAR2(20)
+ DEPT                                               VARCHAR2(10)
+ SALARY                                             FLOAT(63)
+ PARK                                               VARCHAR2(5)
+
+SQL> create table shop(shopid varchar(10), name varchar(30), rent real, rev real, primary key(shopid));
+
+Table created.
+
+SQL> desc shop;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SHOPID                                    NOT NULL VARCHAR2(10)
+ NAME                                               VARCHAR2(30)
+ RENT                                               FLOAT(63)
+ REV                                                FLOAT(63)
+
+SQL> create table movie(movieid varchar(10), moviename varchar(20), reldate date, certificate varchar(10), primary key(movieid));
+
+Table created.
+
+SQL> create table audi(audino varchar(10),movid varchar(10),seats int(5));
+create table audi(audino varchar(10),movid varchar(10),seats int(5))
+                                                                *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> create table audi(audino varchar(10),movid varchar(10), seats integer(5));
+create table audi(audino varchar(10),movid varchar(10), seats integer(5))
+                                                                     *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> create table audi(audino varchar(10),movid varchar(10), seats integer);
+
+Table created.
+
+SQL> desc auid
+ERROR:
+ORA-04043: object auid does not exist
+
+
+SQL> desc audi;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ AUDINO                                             VARCHAR2(10)
+ MOVID                                              VARCHAR2(10)
+ SEATS                                              NUMBER(38)
+
+SQL> create table audi1(seatno varchar(5), price real, t12 varchar(5), t3 varchar(5), t6 varchar(5), t9 varchar(5), primary key(seatno));
+
+Table created.
+
+SQL> desc audi1;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SEATNO                                    NOT NULL VARCHAR2(5)
+ PRICE                                              FLOAT(63)
+ T12                                                VARCHAR2(5)
+ T3                                                 VARCHAR2(5)
+ T6                                                 VARCHAR2(5)
+ T9                                                 VARCHAR2(5)
+
+SQL> create table audi2(seatno varchar(5), price real, t12 varchar(5), t3 varchar(5), t6 varchar(5), t9 varchar(5), primary key(seatno));
+
+Table created.
+
+SQL> create table food(itemid varchar(20), price real, primary key(itemid));
+
+Table created.
+
+SQL> desc parking;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SPOTID                                    NOT NULL VARCHAR2(5)
+ VEHICLE                                            VARCHAR2(10)
+ TENTRY                                             TIMESTAMP(6)
+ TEXIT                                              TIMESTAMP(6)
+ VEHNO                                              VARCHAR2(10)
+
+SQL> insert into parking values(10,'car',14:33:20);
+SP2-0552: Bind variable "33" not declared.
+SQL> alter session set nls_timestamp_format = 'HH24:MI:SSXFF';
+
+Session altered.
+
+SQL> desc parking;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SPOTID                                    NOT NULL VARCHAR2(5)
+ VEHICLE                                            VARCHAR2(10)
+ TENTRY                                             TIMESTAMP(6)
+ TEXIT                                              TIMESTAMP(6)
+ VEHNO                                              VARCHAR2(10)
+
+SQL> insert into parking values(10,'car',14:33:20);
+SP2-0552: Bind variable "33" not declared.
+SQL> insert into parking values(10,'car','14:33:20');
+insert into parking values(10,'car','14:33:20')
+            *
+ERROR at line 1:
+ORA-00947: not enough values
+
+
+SQL> insert into parking values(10,'car','14:33:20','16:22:34','2031');
+
+1 row created.
+
+SQL> select * from parking;
+
+SPOTI VEHICLE
+----- ----------
+TENTRY
+---------------------------------------------------------------------------
+TEXIT
+---------------------------------------------------------------------------
+VEHNO
+----------
+10    car
+14:33:20.000000
+16:22:34.000000
+2031
+
+
+SQL> alter session set nls_timestamp_format = 'HH24:MI:SS';
+
+Session altered.
+
+SQL> insert into parking values(10,'car','14:33:20','16:22:34','2031');
+insert into parking values(10,'car','14:33:20','16:22:34','2031')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSTEM.SYS_C0011107) violated
+
+
+SQL> insert into parking values(20,'car','14:33:20','16:22:34','2031');
+
+1 row created.
+
+SQL> select * from parking;
+
+SPOTI VEHICLE
+----- ----------
+TENTRY
+---------------------------------------------------------------------------
+TEXIT
+---------------------------------------------------------------------------
+VEHNO
+----------
+10    car
+14:33:20
+16:22:34
+2031
+
+
+SPOTI VEHICLE
+----- ----------
+TENTRY
+---------------------------------------------------------------------------
+TEXIT
+---------------------------------------------------------------------------
+VEHNO
+----------
+20    car
+14:33:20
+16:22:34
+2031
+
+
+SQL> select * from parking;
+
+SPOTI VEHICLE
+----- ----------
+TENTRY
+---------------------------------------------------------------------------
+TEXIT
+---------------------------------------------------------------------------
+VEHNO
+----------
+10    car
+14:33:20
+16:22:34
+2031
+
+
+SPOTI VEHICLE
+----- ----------
+TENTRY
+---------------------------------------------------------------------------
+TEXIT
+---------------------------------------------------------------------------
+VEHNO
+----------
+20    car
+14:33:20
+16:22:34
+2031
+
+
+SQL> insert into shop values(233,'hello kitty',50000,500);
+
+1 row created.
+
+SQL> select * from shop;
+
+SHOPID     NAME                                 RENT        REV
+---------- ------------------------------ ---------- ----------
+233        hello kitty                         50000        500
+
+SQL> select * from parking;
+
+SPOTI VEHICLE
+----- ----------
+TENTRY
+---------------------------------------------------------------------------
+TEXIT
+---------------------------------------------------------------------------
+VEHNO
+----------
+10    car
+14:33:20
+16:22:34
+2031
+
+
+SPOTI VEHICLE
+----- ----------
+TENTRY
+---------------------------------------------------------------------------
+TEXIT
+---------------------------------------------------------------------------
+VEHNO
+----------
+20    car
+14:33:20
+16:22:34
+2031
+
+
+SQL> commit;
+
+Commit complete.
+
+SQL> create table arcade(memid varchar(10), credit real,primary key(memid));
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> truncate shop;
+truncate shop
+            *
+ERROR at line 1:
+ORA-03290: Invalid truncate command - missing CLUSTER or TABLE keyword
+
+
+SQL> truncate table shop;
+
+Table truncated.
+
+SQL> truncate table parking;
+truncate table parking
+               *
+ERROR at line 1:
+ORA-02266: unique/primary keys in table referenced by enabled foreign keys
+
+
+SQL> truncate table parking cascade constraints;
+truncate table parking cascade constraints
+                       *
+ERROR at line 1:
+ORA-03291: Invalid truncate option - missing STORAGE keyword
+
+
+SQL> select * emp;
+select * emp
+         *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected
+
+
+SQL> select * from emp;
+
+no rows selected
+
+SQL> create table adlogin(empid varchar(20), pass varchar(20), primary key(empid));
+
+Table created.
+
+SQL> create table emplogin(empid varchar(20),pass varchar(20), type varchar(20),primary key(empid));
+
+Table created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL>

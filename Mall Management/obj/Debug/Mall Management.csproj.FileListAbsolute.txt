@@ -1,0 +1,49 @@
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\bin\Debug\Login.exe.config
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.exe
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.pdb
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Mall Management.csprojResolveAssemblyReference.cache
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.AddEmp.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Arcade.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Book.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.DelEmp.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Emp.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Entry.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.FoodCourt.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Mainlogin.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Adminview.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Movie.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Parkingview.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Rev.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Seating.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Shopkeeper.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Mall Management.csproj.GenerateResource.Cache
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\bin\Debug\Login.exe
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\bin\Debug\Login.pdb
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Exit.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.List.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Login\Login\obj\Debug\Login.Update.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\bin\Debug\Login.exe.config
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.exe
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.pdb
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\bin\Debug\Login.exe
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\bin\Debug\Login.pdb
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Mall Management.csprojResolveAssemblyReference.cache
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.AddEmp.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Arcade.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Book.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.DelEmp.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Entry.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Exit.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.FoodCourt.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.List.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Mainlogin.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Adminview.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Movie.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Parkingview.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Properties.Resources.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Rev.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Seating.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Shopkeeper.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Login.Update.resources
+C:\Users\Aditi\Documents\Visual Studio 2015\Projects\Mall Management\Mall Management\obj\Debug\Mall Management.csproj.GenerateResource.Cache
